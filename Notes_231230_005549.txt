@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+void swap(int &a, int &b);
+
+int main()
+
+{
+
+int x, y;
+
+cin >> x >> y;
+
+swap(x, y);
+
+cout << "X : " << x << endl;
+
+cout << "Y : " << y << endl;
+
+system("pause");
+
+}
+
+void swap(int &a, int &b)
+
+{
+
+int temp;
+
+temp = a;
+
+a = b;
+
+b = temp;
+
+}
